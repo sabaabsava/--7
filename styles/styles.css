@@ -1,12 +1,51 @@
 .birds1{
-	scale: 0.3;
+	z-index: 3;
+	scale: 0.2;
 	position: absolute;
-	top: -30px;
-	right: -420px;
-	animation: birds1 20s infinite;
+	animation: birds1 30s infinite;
 }
 
 @keyframes birds1{
-	0% { right:-420px}
-	100% { right: 1000px}
+	0% { right:-450px}
+	100% { right: 1200px}
+}
+
+.eagle{
+	z-index: 2;
+	scale: 0.5;
+	rotate: 20deg;
+	position: absolute;
+	top: 10px;
+	left: -100px;
+	animation: eagle 10s linear infinite;
+
+}
+
+@keyframes eagle{
+	0% { left:-370px}
+	100% { left:1750px}
+}
+
+
+.sun{
+	z-index: 1;
+	position: absolute;
+	animation: sun 60s infinite;
+	left: -350px;
+}
+
+@keyframes sun{
+	0% { left: -350px}
+	100% { left: 1840px}
+	0% {transform: rotate(0deg);}
+	10% {transform: rotate(36deg);}
+	20% { transform: rotate(72deg);}
+	30% {transform: rotate(108deg);}
+	40% {transform: rotate(144deg);}
+	50% {transform: rotate(180deg);}
+	60% {transform: rotate(216deg);}
+	70% {transform: rotate(252deg);}
+	80% {transform: rotate(288deg);}
+	90% {transform: rotate(324deg);}
+	100% {transform: rotate(360deg);}
 }
