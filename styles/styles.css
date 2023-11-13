@@ -1,0 +1,12 @@
+.birds1{
+	scale: 0.3;
+	position: absolute;
+	top: -30px;
+	right: -420px;
+	animation: birds1 20s infinite;
+}
+
+@keyframes birds1{
+	0% { right:-420px}
+	100% { right: 1000px}
+}
