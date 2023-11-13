@@ -1,5 +1,5 @@
 .birds1{
-	z-index: 3;
+	z-index: 4;
 	scale: 0.2;
 	position: absolute;
 	animation: birds1 30s infinite;
@@ -7,39 +7,38 @@
 
 @keyframes birds1{
 	0% { right:-450px}
-	100% { right: 1200px}
+	100% { right: 1400px}
 }
 
 .eagle{
-	z-index: 2;
+	z-index: 3;
 	scale: 0.5;
 	rotate: 20deg;
 	position: absolute;
 	top: 10px;
 	left: -100px;
 	animation: eagle 10s linear infinite;
-
 }
 
 @keyframes eagle{
 	0% { left:-370px}
-	100% { left:1750px}
+	100% { left:1800px}
 }
 
 
 .sun{
 	z-index: 1;
 	position: absolute;
-	animation: sun 60s infinite;
+	animation: sun 90s infinite;
 	left: -350px;
 }
 
 @keyframes sun{
-	0% { left: -350px}
-	100% { left: 1840px}
+	0% {left: -350px}
+	100% {left: 1840px}
 	0% {transform: rotate(0deg);}
 	10% {transform: rotate(36deg);}
-	20% { transform: rotate(72deg);}
+	20% {transform: rotate(72deg);}
 	30% {transform: rotate(108deg);}
 	40% {transform: rotate(144deg);}
 	50% {transform: rotate(180deg);}
@@ -48,4 +47,20 @@
 	80% {transform: rotate(288deg);}
 	90% {transform: rotate(324deg);}
 	100% {transform: rotate(360deg);}
+}
+
+.plane{
+	scale: 0.5;
+	z-index: 2;
+	position: absolute;
+	top: 530px;
+	left: -220px;
+	animation: plane 15s infinite;
+}
+
+@keyframes plane{
+	from {top: 530px}
+	to {top: -90px}
+	from {left: -220px}
+	to {left:1650px}
 }
